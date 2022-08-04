@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh" style="font-size: 15px;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user,scalable=no">
+    <title>The introduction of SWJTU</title>
+    <meta name="keywords" content="交大网站,转换GPA,自习" />    
+    <meta name="description" content="交大网站可以自习，可以转换GPA" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="./jquery/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js" ></script>
+	<link rel="stylesheet" href="./css/css.css">
+    <script src="./js/GPA.js"></script>
+<body id="body0">
+    <nav class="navbar navbar-default" role="navigation" >
+		<div class="container-fluid"> 
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#example-navbar-collapse">
+				<span class="sr-only">切换导航</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="./交大首页.html"><img id="dd" src="./images/logo.png" alt="交大logo" ></a>
+		</div>
+		<div class="collapse navbar-collapse" id="example-navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="./学校简介.html">学校简介</a></li>
+				<li><a href="./GPA换算系统.html">GPA换算系统</a></li>
+				<li><a href="./自习室.html">自习室</a></li>
+				<li><a href="./登陆界面.html">登录界面</a></li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+
+    <div class="container">
+        
+        <p id="aa">
+            xxx同学，本学分绩点计算仅作为计算工具供同学们参考用，本计算器并没有考虑缓考、课程类别、重修、补考等特殊情况，无法确保数据的准确性，不作为任何评奖评优、免研、其他评选的唯一依据，教务部门不对本数据做任何解释。学生评奖评优中的学分绩点请参照《成绩管理规定》进行计算，特此说明。
+        </p>
+        <div id="qq">
+        <h1 id="ww">绩点换算系统</h1>
+            <form class="bs-example bs-example-form" role="form">
+                <div class="input-group">
+                    <span class="input-group-addon">您的分数</span>
+                    <input id="abcd" type="text" class="form-control" placeholder="">
+                </div>
+            </form>
+        </div>
+        <button id="ee" onclick="Function5()" >计算</button>
+        <h2 id="end"></h2>   
+        <table class="table table-bordered" style="text-align: center;"> 
+            <caption id="rr" >百分制成绩与课程绩点参照表</caption>
+            <thead>
+                <tr>
+                    <th>百分制成绩</th>
+                    <th>对照等级</th>
+                    <th>课程绩点</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>95-100</td>
+                    <td>A+</td>
+                    <td id="tt" rowspan="2">4.0</td>
+                </tr>
+                <tr>
+                    <td>90-94</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>85-89</td>
+                    <td>A-</td>
+                    <td>3.7</td>
+                </tr>
+                <tr>
+                    <td>82-84</td>
+                    <td>B+</td>
+                    <td>3.3</td>
+                </tr>
+                <tr>
+                    <td>78-81</td>
+                    <td>B</td>
+                    <td>3.0</td>
+                </tr>
+                <tr>
+                    <td>75-77</td>
+                    <td>B-</td>
+                    <td>2.7</td>
+                </tr>
+                <tr>
+                    <td>72-74</td>
+                    <td>C+</td>
+                    <td>2.3</td>
+                </tr>
+                <tr>
+                    <td>68-71</td>
+                    <td>C</td>
+                    <td>2.0</td>
+                </tr>
+                <tr>
+                    <td>66-67</td>
+                    <td>C-</td>
+                    <td>1.7</td>
+                </tr>
+                <tr>
+                    <td>64-65</td>
+                    <td>D+</td>
+                    <td>1.3</td>
+                </tr>
+                <tr>
+                    <td>60-63</td>
+                    <td>D</td>
+                    <td>1.0</td>
+                </tr>
+                <tr>
+                    <td><60</td>
+                    <td>F</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh" style="font-size: 15px;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The introduction of SWJTU</title>
+    <meta name="keywords" content="交大网站,转换GPA,自习" />    
+    <meta name="description" content="交大网站可以自习，可以转换GPA" />
+    <link rel="stylesheet" href="./css/css.css">
+    <script src="./jquery/jquery.min.js"></script>
+    <script src="./js/登陆界面.js"></script>
+</head>
+<body id="mm">
+    <div class="back">
+        <a href="./交大首页.html">返回首页</a>
+    </div>
+    <div class="containe">
+        <form>
+        <h1>Please Login</h1>
+            <div class="form-c">
+                <input  id="uid" type="text" required onclick="iu()">
+                <label>
+                    账号
+                </label>
+            </div>
+            <div class="form-c">
+                <input type="password" required>
+                <label>密码</label>
+            </div>
+            <button class="bt" onclick="checkuid()" >登录</button>
+            <p class="tex">忘记密码？ <a href="#">找回密码</a></p>
+        </form>
+    </div>
+   
+</body>
+</html>

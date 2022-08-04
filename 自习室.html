@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh" style="font-size: 15px;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user,scalable=no">
+    <title>The introduction of SWJTU</title>
+    <meta name="keywords" content="交大网站,转换GPA,自习" />    
+    <meta name="description" content="交大网站可以自习，可以转换GPA" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="./jquery/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js" ></script>
+	<link rel="stylesheet" href="./css/css.css">
+    <script src="./js/自习室.js"></script>
+<body id="yy" >
+    <nav class="navbar navbar-default" role="navigation" >
+		<div class="container-fluid"> 
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#example-navbar-collapse">
+				<span class="sr-only">切换导航</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="./交大首页.html"><img id="dd" src="./images/logo.png" alt="交大logo" ></a>
+		</div>
+		<div class="collapse navbar-collapse" id="example-navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="./学校简介.html">学校简介</a></li>
+				<li><a href="./GPA换算系统.html">GPA换算系统</a></li>
+				<li><a href="./自习室.html">自习室</a></li>
+				<li><a href="./登陆界面.html">登录界面</a></li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+    <div class="container">
+        <audio controls>
+            <source src="./video/后弦 - 西厢.mp3" type="audio/mpeg">
+        </audio> 
+      
+        <p id="ii">
+           自习室使用规则如下：
+        </p>
+        <ol>
+            <li id="pp">
+                使用者可手动设置ddl时间来进行倒计时，以督促学习。
+            </li>
+            <li id="pp">
+                设置的ddl时间具有一定的格式，如(2022/01/01 00:00:00)
+            </li>
+            <li id="pp">
+                ddl的每次输入都需要重新刷新页面
+            </li>
+            <li id="pp">
+                如果学习感到疲乏，本网站可为使用者提供视频或者音乐放松。
+            </li>
+        </ol>
+        <div id="ll">
+            <form class="bs-example bs-example-form" role="form">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" onclick="Functionabc()">
+                                    Go!
+                                </button>
+                            </span>
+                            <input id="asd" type="text" class="form-control" onclick="qa()">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <p id="count">距离您的ddl时间还有：
+            <span class="day">00</span>
+            天
+            <span class="hour">00</span>
+            时
+            <span class="min">00</span>
+            分
+            <span class="sec">00</span>
+            秒
+        </P>
+        <h2 id="end1"></h2>
+        <div id="data">
+            <p>
+                <span id="prev">上一月</span>
+                <span id="nian">2020</span>
+                <span id="next">下一月</span>
+            </p>
+            <h5 id="yue">五月</h5>
+            <ul id="title">
+                <li >日</li>
+                <li>一</li>
+                <li>二</li>
+                <li>三</li>
+                <li>四</li>
+                <li>五</li>
+                <li>六</li>
+            </ul>
+            <ul id="date"></ul>
+        </div>
+       <div class="iframe"><iframe src="https://player.bilibili.com/player.html?aid=849608523&bvid=BV1WL4y1W7Jh&cid=452171959&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>
+    </div>
+    
+</html>
